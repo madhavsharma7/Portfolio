@@ -81,7 +81,7 @@ a {
 }
 
 #header .nav-list ul a {
-  font-size: 80rem;
+  font-size: 3rem;
   font-weight: 500;
   text-decoration: none;
   color: black;
@@ -390,7 +390,8 @@ a {
 /* hero media queries starts*/
 @media (max-width: 450px) {
   .home {
-    padding: 40% 5%;
+    padding: 30% 5% 0 8%;
+    min-height: 10vh;
   }
 
   .home .btn {
@@ -402,7 +403,8 @@ a {
   }
 
   .home .image img {
-    scale: 1;
+    scale: 0;
+    margin-left: 1%;
     margin-top: 1rem;
   }
 
@@ -904,7 +906,7 @@ a {
   font-size: 22px;
   margin-top: 3rem;
   margin-right: 1rem;
-  margin-left: 35rem;
+  margin-left: 20%;
   padding-bottom: 2rem;
 }
 
