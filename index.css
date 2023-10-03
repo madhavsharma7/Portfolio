@@ -988,6 +988,13 @@ form textarea {
   background: white;
 }
 
+#msg{
+  color: black;
+  margin-top: 2rem;
+  font-size: 20px;
+  margin-left: 43rem;
+  display: block;
+}
 @media screen and (max-width: 600px) {
   #contact-right {
     width: 80%;
