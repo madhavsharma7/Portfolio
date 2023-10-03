@@ -923,15 +923,19 @@ a {
 .contactus h2 span {
   color: plum;
 }
-
+#contact-left{
+  margin-top: 5rem;
+}
 #contact-left p {
   font-size: 18px;
+  
 }
 
 #contact-left p i {
   font-size: 2rem;
   color: #ff004f;
   margin-left: 8rem;
+  margin-top: 2rem;
   
 }
 .btn2 {
@@ -948,7 +952,8 @@ a {
 
 #contact-right {
   width: 50%;
-  margin: 0 46%;
+  margin-left: 46%;
+  margin-top: -16rem;
 }
 
 form input,
