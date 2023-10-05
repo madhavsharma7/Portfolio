@@ -391,7 +391,7 @@ a {
 @media (max-width: 450px) {
   .home {
     padding: 30% 5% 0 8%;
-    min-height: 10vh;
+    height: 70vh;
   }
 
   .home .btn {
@@ -405,7 +405,7 @@ a {
   .home .image img {
     scale: 0;
     margin-left: 1%;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .home .content p {
@@ -728,6 +728,9 @@ a {
 
 /*media queries for skills section*/
 @media screen and (max-width: 600px) {
+  .skills{
+    height: 110vh;
+  }
   .skills img {
     scale: 1.1;
   }
@@ -830,7 +833,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: -1rem;
 }
 
 .footer .box-container .box {
@@ -911,9 +914,10 @@ a {
 }
 
 .contactus {
-  min-height: 20vh;
+  height: 75vh;
   background-size: cover;
   background-image: url("assets/marble.jpg");
+
 }
 
 .contactus h2 {
@@ -990,15 +994,18 @@ form textarea {
 
 #msg{
   color: black;
-  margin-top: 2rem;
   font-size: 20px;
-  margin-left: 43rem;
+  margin-left: 70rem;
   display: block;
+  margin-top: 20px;
 }
 @media screen and (max-width: 600px) {
+  .contactus {
+    height: 100vh;
+  }
   #contact-right {
     width: 80%;
-    margin: 0 10%;
+    margin: 5% 10%;
   }
 
   #contact-right button {
