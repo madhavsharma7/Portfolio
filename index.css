@@ -53,6 +53,8 @@ a {
   height: 100%;
   max-width: 98%;
   padding: 0 30px;
+  font-family: "Lora", serif;
+  font-weight: 20;
 }
 
 .brand h1 {
@@ -259,8 +261,8 @@ a {
 .home .image img {
   scale: 0.8;
   width: 55%;
-  margin-top: -2rem;
-  margin-left: 35rem;
+  margin-top: 8rem;
+  margin-left: 25rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -273,16 +275,19 @@ a {
 }
 
 .home .content h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 600;
+  margin-top: 20%;
   color: black;
+  font-family: "Lora", serif;
 }
 
 .home .content p {
-  font-size: 4.5rem;
+  font-size: 4em;
   color: #000;
   font-weight: 600;
   padding: 1rem 0;
+  font-family: "Lora", serif;
 }
 
 .home .content p span {
@@ -300,7 +305,7 @@ a {
   color: #fff;
   background: plum;
   box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
-  font-family: "Nunito", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .home .btn span {
@@ -421,6 +426,7 @@ a {
 .about {
   background-image: url("assets/marble.jpg");
 }
+
 .about .heading {
   font-size: 4rem;
   padding-top: 3rem;
@@ -462,11 +468,14 @@ a {
 .about .row .content {
   flex: 1 1 45rem;
   padding: 3rem;
+  font-family: "Lora", serif;
 }
 
 .about .row .content h3 {
   color: black;
   font-size: 2.5rem;
+  font-family: "Lora", serif;
+  margin-top: 2%;
 }
 
 .about .row .content .tag {
@@ -477,10 +486,10 @@ a {
 }
 
 .about .row .content p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1.5rem;
-  font-family: "Nunito";
-  font-weight: 600;
+  font-family: "Lora", serif;
+  /* font-weight: 600; */
   text-transform: none;
 }
 
@@ -631,6 +640,7 @@ a {
   padding: 1rem;
   flex-wrap: wrap;
   flex: 1 1 70rem;
+   
 }
 
 .education .box-container .box .content h3 {
@@ -640,12 +650,15 @@ a {
   font-weight: 600;
   text-align: left;
   margin-left: 1rem;
+  font-family: "Lora", serif;
+  
 }
 
 .education .box-container .box .content p {
   font-size: 2rem;
   margin-left: 1rem;
   text-align: left;
+    font-family: "Lora", serif;
 }
 
 .education h4 {
@@ -653,7 +666,7 @@ a {
   color: black;
   text-align: left;
   margin: 1rem;
-  font-family: "Nunito", sans-serif;
+font-family: "Lora", serif;
   font-weight: 700;
 }
 
@@ -725,9 +738,10 @@ a {
 
 /*media queries for skills section*/
 @media screen and (max-width: 600px) {
-  .skills{
+  .skills {
     height: 110vh;
   }
+
   .skills img {
     scale: 1.1;
   }
@@ -754,7 +768,7 @@ a {
 
 .box1div {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: center;
   padding: 2%;
@@ -793,8 +807,11 @@ a {
 }
 
 .layer h3 {
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 20px;
+}
+.layer p{
+  font-family: "Lora", serif;
 }
 
 .layer a {
@@ -842,7 +859,7 @@ a {
   font-size: 1.5rem;
   font-weight: 100;
   color: black;
-  font-weight: normal;
+  font-family: "Lora", serif;
 }
 
 @-webkit-keyframes pound {
@@ -876,7 +893,7 @@ a {
 /* experience section starts*/
 .experience {
   min-height: 60vh;
- 
+
 }
 
 .experience h1 {
@@ -887,7 +904,7 @@ a {
 }
 
 .experience h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #020133;
   padding-bottom: 2rem;
   margin-top: 2rem;
@@ -903,11 +920,12 @@ a {
   flex-direction: column;
   list-style: disc outside none;
   display: list-item;
-  font-size: 22px;
-  margin-top: 3rem;
+  font-size: 18px;
+  margin-top: 2rem;
   margin-right: 1rem;
-  margin-left: 20%;
-  padding-bottom: 2rem;
+  margin-left: 24%;
+  padding-bottom: 5rem;
+  font-family: "Lora", serif;
 }
 
 .contactus {
@@ -921,17 +939,22 @@ a {
   text-align: center;
   padding: 2rem 0;
   font-size: 3rem;
+ 
 }
 
 .contactus h2 span {
   color: plum;
 }
-#contact-left{
+
+#contact-left {
   margin-top: 5rem;
+
 }
+
 #contact-left p {
   font-size: 18px;
-  
+    font-family: "Lora", serif;
+
 }
 
 #contact-left p i {
@@ -939,18 +962,24 @@ a {
   color: #ff004f;
   margin-left: 8rem;
   margin-top: 2rem;
-  
+ 
+
 }
+
+
+
 .btn2 {
-    display: inline-block;
-    font-size: 15px;
-    margin-top: 5rem;
-    margin-left: 8rem;
-    text-decoration: none;
-    color: white;
-    background: red;
-    font-size: 20px;
-    padding: 1rem;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 5rem;
+  margin-left: 8rem;
+  text-decoration: none;
+  color: white;
+  background: red;
+  font-size: 18px;
+  padding: 1rem;
+  font-family: "Lora", serif;
+  
 }
 
 #contact-right {
@@ -970,6 +999,7 @@ form textarea {
   margin: 5px 0;
   font-size: 18px;
   border-radius: 6px;
+  font-family: "Lora", serif;
 }
 
 #contact-right button {
@@ -982,6 +1012,7 @@ form textarea {
   border-radius: 20px;
   font-size: 20px;
   margin-bottom: 2rem;
+  font-family: "Lora", serif;
 }
 
 #contact-right button:hover {
@@ -989,17 +1020,19 @@ form textarea {
   background: white;
 }
 
-#msg{
+#msg {
   color: black;
   font-size: 20px;
   margin-left: 70rem;
   display: block;
   margin-top: 20px;
 }
+
 @media screen and (max-width: 600px) {
   .contactus {
     height: 100vh;
   }
+
   #contact-right {
     width: 80%;
     margin: 5% 10%;
