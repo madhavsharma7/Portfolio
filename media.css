@@ -1,0 +1,189 @@
+
+/* End Header section */
+
+@keyframes hamburger_puls {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #header .hamburger {
+    display: none;
+  }
+
+  #header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+
+  #header .nav-list ul li {
+    display: inline-block;
+  }
+
+  #header .nav-list ul li a {
+    font-size: 1.5rem;
+  }
+
+  #header .nav-list ul a:after {
+    display: none;
+  }
+}
+
+/* social icons end */
+/* hero media queries starts*/
+
+@media (max-width: 450px) {
+    .home {
+        padding: 30% 5% 0 8%;
+        height: 70vh;
+    }
+
+    .home .btn {
+        margin: 4rem 0;
+    }
+
+    .socials {
+        margin-top: 12rem;
+    }
+
+    .home .image img {
+        scale: 0;
+        margin-left: 1%;
+        margin-top: 0rem;
+    }
+
+    .home .content p {
+        font-size: 2.2rem;
+    }
+
+    .home .content p span {
+        font-size: 2.2rem;
+    }
+}
+
+/* about media queries starts*/
+@media screen and (max-width: 600px) {
+    .about .row .image {
+        margin-top: 2rem;
+    }
+
+    .about .row .image img {
+        margin: 0 auto;
+        width: 80%;
+        mix-blend-mode: normal;
+    }
+
+    .about .row {
+        padding: 0.5rem;
+        margin-bottom: 7rem;
+    }
+
+    .about .row .content {
+        padding: 1rem;
+    }
+
+    .about .row .content .box-container {
+        gap: 0;
+    }
+}
+
+/* about media queries ends*/
+/* about section ends */
+
+/* education media queries starts*/
+@media screen and (max-width: 600px) {
+    .education .box-container .box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .education .box-container .box .image {
+        width: 100%;
+        height: 25rem;
+    }
+
+    .education box-container .box img {
+        width: 100%;
+    }
+
+    .education .box-container .box .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        flex-wrap: wrap;
+        flex: 0;
+    }
+
+    .education .btns {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-wrap: wrap;
+    }
+}
+
+/* education media queries ends*/
+/* education section ends */
+
+/*media queries for skills section*/
+@media screen and (max-width: 600px) {
+    .skills {
+        height: 110vh;
+    }
+
+    .skills img {
+        scale: 1.1;
+    }
+}
+
+@-webkit-keyframes pound {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pound {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 450px) {
+    .footer .box-container .box {
+        margin: 1.5rem;
+    }
+
+    .footer .box-container .box p {
+        padding: 0.7rem;
+    }
+
+    .footer .box-container .box .share a {
+        padding: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contactus {
+        height: 100vh;
+    }
+
+    #contact-right {
+        width: 80%;
+        margin: 5% 10%;
+    }
+
+    #contact-right button {
+        width: 25%;
+    }
+}
