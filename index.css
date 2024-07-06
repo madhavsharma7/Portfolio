@@ -573,7 +573,13 @@ font-family: "Lora", serif;
 /*skills section starts*/
 .skills {
   background: white;
-  height: 80vh;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding: 3rem 10%;
 }
 
 .skills h2 {
@@ -582,22 +588,69 @@ font-family: "Lora", serif;
   text-align: center;
 }
 
-.skills img {
-  margin: 50px;
-  height: 20%;
-  width: 6%;
-  margin-left: 12%;
-  border-radius: 10%;
+.subheading,
+.subheading2 {
+  margin: 2rem 0;
+  font-size: 1.8vw;
+}
+
+.subheading2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  /* Adjust margin if needed */
+}
+
+.backend {
+  font-size: 2rem;
+}
+
+.skills-container,
+.skills-container2 {
+  /* display: grid; */
+  display: flex;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 40px;
   justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.hover-effect {
-  transition: transform 0.3s;
+.skill-box,
+.skill-box2 {
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 150px;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hover-effect:hover {
-  transform: scale(1.2);
-  filter: grayscale(0);
+.skill-box img,
+.skill-box2 img {
+  max-width: 100%;
+  max-height: 60%;
+  border-radius: 10%;
+}
+
+.skill-box p,
+.skill-box2 p {
+
+  text-transform: uppercase;
+  /* letter-spacing:1.2px; */
+  margin-top: 4vh;
+  font-size: 1.2vw;
+}
+
+.hover-effect:hover,
+.hover-effect2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /*project section starts*/
@@ -606,7 +659,7 @@ font-family: "Lora", serif;
   width: 100%;
   justify-content: center;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 30%;
   font-size: 24px;
   padding: 2rem;
   background-color: rgba(188, 146, 233, 0.867);
