@@ -108,6 +108,7 @@
     .education .box-container .box {
         flex-direction: column;
         width: 100%;
+        margin-top: 1rem;
     }
 
     .education .box-container .box .image {
