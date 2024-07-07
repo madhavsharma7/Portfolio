@@ -1,50 +1,49 @@
-
 /* End Header section */
 
 @keyframes hamburger_puls {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
 
-  100% {
-    opacity: 0;
-    transform: scale(1.4);
-  }
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-  #header .hamburger {
-    display: none;
-  }
+    #header .hamburger {
+        display: none;
+    }
 
-  #header .nav-list ul {
-    position: initial;
-    display: block;
-    height: auto;
-    width: fit-content;
-    background-color: transparent;
-  }
+    #header .nav-list ul {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
 
-  #header .nav-list ul li {
-    display: inline-block;
-  }
+    #header .nav-list ul li {
+        display: inline-block;
+    }
 
-  #header .nav-list ul li a {
-    font-size: 1.5rem;
-  }
+    #header .nav-list ul li a {
+        font-size: 1.5rem;
+    }
 
-  #header .nav-list ul a:after {
-    display: none;
-  }
+    #header .nav-list ul a:after {
+        display: none;
+    }
 }
 
 /* social icons end */
 /* hero media queries starts*/
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .home {
-        padding: 30% 5% 0 8%;
+        padding: 15% 5% 0 8%;
         height: 70vh;
     }
 
@@ -73,6 +72,10 @@
 
 /* about media queries starts*/
 @media screen and (max-width: 600px) {
+    .about {
+        height: 115vh;
+    }
+
     .about .row .image {
         margin-top: 2rem;
     }
@@ -139,11 +142,38 @@
 /*media queries for skills section*/
 @media screen and (max-width: 600px) {
     .skills {
-        height: 110vh;
+        width: 100vw;
+        height: 215vh;
     }
 
-    .skills img {
-        scale: 1.1;
+    .subheading,
+    .subheading2 {
+        font-size: 5vw;
+    }
+
+    .skills-container,
+    .skills-container2,
+    .skills-container3 {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .skill-box,
+    .skill-box2 {
+        height: 25vh;
+        width: 25vw;
+        background-color: #f0f0f0;
+        padding: 10px;
+    }
+
+    .skill-box p,
+    .skill-box2 p {
+        text-transform: uppercase;
+        /* letter-spacing:1.2px; */
+        margin-top: 2vh;
+        font-size: 3.5vw;
     }
 }
 
