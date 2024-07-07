@@ -669,7 +669,7 @@ a {
   width: 100%;
   justify-content: center;
   text-align: center;
-  margin-top: 25%;
+  margin-top: 30%;
   font-size: 24px;
   padding: 2rem;
   background-color: rgba(188, 146, 233, 0.867);
@@ -695,7 +695,6 @@ a {
 }
 
 .work img {
-  background-size: cover;
   width: 400px;
   height: 200px;
   border-radius: 10px;
