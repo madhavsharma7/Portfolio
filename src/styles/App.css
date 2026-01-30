@@ -1,0 +1,35 @@
+.app {
+    min-height: 100vh;
+    padding-left: 100px;
+    /* Space for Sidebar */
+    transition: padding-left 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .app {
+        padding-left: 0;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    /* Wider container for Bento */
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: left;
+    /* Bento style usually left aligned */
+    margin-bottom: 3rem;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.section-title span {
+    color: var(--accent-color);
+}

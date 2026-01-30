@@ -1,0 +1,192 @@
+.hero-bento-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    width: 100%;
+}
+
+.bento-tile {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.bento-tile:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile Tile (Large, spans 2x2) */
+.profile-tile {
+    grid-column: span 2;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.profile-content {
+    z-index: 2;
+}
+
+.profile-content .name {
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.profile-content .role {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(74, 222, 128, 0.1);
+    color: #4ade80;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+}
+
+.status-badge .dot {
+    width: 8px;
+    height: 8px;
+    background: #4ade80;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #4ade80;
+}
+
+.profile-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: auto;
+    filter: grayscale(100%);
+    mask-image: linear-gradient(to top, black 50%, transparent 100%);
+    /* Fade top lightly or just strict clip */
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.profile-tile:hover .profile-img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Location Tile */
+.location-tile {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1e293b;
+    /* Darker map placeholder */
+    /* Could add map image bg here */
+}
+
+.location-info {
+    text-align: center;
+}
+
+.location-info .icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Social Tile */
+.social-tile {
+    grid-column: span 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.social-tile a {
+    color: var(--text-secondary);
+    transition: 0.3s;
+}
+
+.social-tile a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Tech Tile */
+.tech-tile {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.tech-tile h3 {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-row {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+
+/* Music Tile Removed */
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-tile {
+        grid-column: span 1;
+        min-height: 400px;
+    }
+
+    .profile-img {
+        width: 250px;
+    }
+}
