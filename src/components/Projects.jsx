@@ -10,7 +10,7 @@ const Projects = () => {
             title: "MadCommerce",
             desc: "MadCommerce is a vanilla JavaScript–based eCommerce web app that uses the Fake Store API to showcase products and core cart functionality without a payment gateway.",
             tech: ["Vanilla Javascript", "Fake Store API"],
-            img: "../public/assets/projects/Madcommerce .png",
+            img: "/assets/projects/Madcommerce .png",
             links: { github: "https://github.com/madhavsharma7/MadCommerce", demo: "https://madcommerce.vercel.app/" }
         },
         {
@@ -18,7 +18,7 @@ const Projects = () => {
             title: "The Press Point",
             desc: "Built a full-stack news app using the GNews API with real-time headlines, category filtering, Google login and a responsive React UI.Backend powered by Express and MongoDB for user auth, saved articles, and data handling",
             tech: ["React", "Express", "NodeJS", "MongoDB", "Gnews API", "Google Auth", "Tailwind CSS"],
-            img: "../public/assets/projects/The Press Point.png",
+            img: "/assets/projects/The Press Point.png",
             links: { github: "https://github.com/madhavsharma7/The-Press-Point", demo: "https://the-press-point.vercel.app/" }
         },
         {
@@ -26,7 +26,7 @@ const Projects = () => {
             title: "Cab Booking Landing Page",
             desc: "The Online Cab Booking Website project aims to create a user-friendly site for booking cabs.",
             tech: ["HTML", "CSS", "JS"],
-            img: "../public/assets/projects/cab.png",
+            img: "/assets/projects/cab.png",
             links: { github: "https://github.com/madhavsharma7/Taxi-Site", demo: "https://madhavsharma7.github.io/Taxi-Site/" }
         },
         {
@@ -34,7 +34,7 @@ const Projects = () => {
             title: "Weather Dashboard",
             desc: "The Weather App is a simple, responsive web tool that displays real-time weather data for any city using the OpenWeatherMap API.",
             tech: ["HTML", "CSS", "JS", "OpenWeatherMap API"],
-            img: "../public/assets/projects/Weather.png",
+            img: "/assets/projects/Weather.png",
             links: { github: "https://github.com/madhavsharma7/Weather-App", demo: "https://madhavsharma7.github.io/Weather-App/" }
         },
 
@@ -43,7 +43,7 @@ const Projects = () => {
             title: "MaddyFitness",
             desc: "The Gym Website project creates a visually appealing site with animations. It helps practice HTML, CSS and JS.",
             tech: ["HTML", "CSS", "JS"],
-            img: "../public/assets/projects/gym.png",
+            img: "/assets/projects/gym.png",
             links: { github: "https://github.com/madhavsharma7/Gym-Site", demo: "https://madhavsharma7.github.io/Gym-Site/" }
         },
         {
@@ -51,7 +51,7 @@ const Projects = () => {
             title: "Fitness Club",
             desc: "The Gym Website project creates a visually appealing site with animations. It helps practice HTML, CSS and JS.",
             tech: ["HTML", "CSS", "JS"],
-            img: "../public/assets/projects/gym2.png",
+            img: "/assets/projects/gym2.png",
             links: { github: "https://github.com/madhavsharma7/Fitness-Club", demo: "https://madhavsharma7.github.io/Fitness-Club/" }
         }
     ];
