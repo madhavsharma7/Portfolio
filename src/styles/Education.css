@@ -70,7 +70,11 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+    .section-title {
+        font-size: 5vw !important;
+    }
+
     .education-card {
         flex-direction: column;
     }
@@ -80,4 +84,6 @@
         margin-right: 0;
         margin-bottom: 1.5rem;
     }
+
+
 }

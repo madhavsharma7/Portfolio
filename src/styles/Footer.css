@@ -6,3 +6,10 @@
     border-top: 1px solid var(--border-color);
     background: rgba(15, 23, 42, 0.4);
 }
+
+@media screen and (max-width: 600px) {
+
+    .footer p {
+        font-size: 3vw;
+    }
+}

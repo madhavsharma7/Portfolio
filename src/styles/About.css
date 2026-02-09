@@ -86,9 +86,18 @@
     box-shadow: 0 8px 25px var(--accent-glow);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .about-content {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+
+    .section-title {
+        font-size: 5.5vw !important;
+    }
+
+    .about-image img {
+        width: 50%;
+        margin-left: 23vw;
     }
 }

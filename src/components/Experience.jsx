@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import '../styles/ExperienceTimeline.css';
+import '../styles/Experience.css';
 
 const Experience = () => {
     const experiences = [
