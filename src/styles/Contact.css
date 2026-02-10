@@ -105,8 +105,14 @@
 
 .msg {
     color: #4ade80;
-    margin-top: 10px;
+    margin-top: 20px;
+    display: block;
+    font-size: 1.2rem;
     font-weight: 500;
+}
+
+.msg.error {
+    color: #ef4444;
 }
 
 @media screen and (max-width: 600px) {
