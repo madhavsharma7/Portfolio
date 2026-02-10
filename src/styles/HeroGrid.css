@@ -291,3 +291,13 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 430px){
+
+    .tech-tile {
+        grid-column: span 1;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+}
