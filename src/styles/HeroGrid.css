@@ -292,12 +292,14 @@
     }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 420px){
 
     .tech-tile {
+        height: 15vh;
         grid-column: span 1;
         margin-top: 0;
-        padding: 1rem;
+        padding: 0.1rem;
+    
     }
 
 }
